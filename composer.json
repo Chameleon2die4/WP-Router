@@ -1,15 +1,33 @@
 {
-	"name": "jbrinley/wp-router",
-	"description": "Provides a simple API for mapping requests to callback functions.",
-	"type": "wordpress-plugin",
-	"authors": [
-		{
-			"name": "Jonathan Brinley",
-			"email": "jonathan@flightless.us"
-		}
-	],
-	"require": {
-		"php": ">=5.2.0"
-	},
-	"minimum-stability": "dev"
+  "name": "chameleon2die4/wp-router",
+  "description": "Provides a simple API for mapping requests to callback functions.",
+  "type": "package",
+  "license": "MIT",
+  "keywords": [
+    "wordpress",
+    "router"
+  ],
+  "homepage": "https://github.com/Chameleon2die4/WP-Router",
+  "authors": [
+    {
+      "name": "Chameleon2die4",
+      "email": "chameleon2die4@gmail.com",
+      "homepage": "https://github.com/Chameleon2die4"
+    },
+    {
+      "name": "Jonathan Brinley",
+      "email": "jonathan@flightless.us"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "WpRouter\\": "src/"
+    },
+    "files": [
+      "load.php"
+    ]
+  }
 }
