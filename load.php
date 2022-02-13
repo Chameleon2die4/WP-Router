@@ -3,7 +3,7 @@
 namespace WpRouter;
 
 //function load() {
-    if ( Utility::prerequisites_met(phpversion(), get_bloginfo('version')) ) {
+    if ( Utility::prerequisites_met(phpversion(), \get_bloginfo('version')) ) {
         // we can continue. Load all supporting files and hook into wordpress
         add_action('init', [ 'WpRouter/Utility', 'init' ], -100, 0);
         add_action(Utility::INIT_HOOK, [ 'WpRouter/Page', 'init' ], 0, 0);
