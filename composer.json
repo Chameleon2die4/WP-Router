@@ -1,6 +1,6 @@
 {
   "name": "chameleon2die4/wp-router",
-  "description": "Provides a simple API for mapping requests to callback functions.",
+  "description": "Routes paths to callback functions in WordPress.",
   "type": "package",
   "license": "MIT",
   "keywords": [

@@ -256,6 +256,7 @@ class Router extends Utility
     protected function rewrite_rules() {
         $rules = array();
         foreach ( $this->routes as $route ) {
+            /** @var Route $route */
             $rules = array_merge($rules, $route->rewrite_rules());
         }
         return $rules;
